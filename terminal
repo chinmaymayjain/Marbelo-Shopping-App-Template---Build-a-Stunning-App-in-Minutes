@@ -1,0 +1,27 @@
+# Create the project with Expo
+npx create-expo-app Marbello
+cd Marbello
+
+# Install required packages
+npx expo install @react-navigation/native @react-navigation/bottom-tabs @react-navigation/stack
+npx expo install react-native-reanimated react-native-gesture-handler react-native-screens
+npx expo install react-native-safe-area-context @react-native-community/blur
+npx expo install react-native-vector-icons react-native-fast-image
+npx expo install react-native-reanimated-carousel
+npx expo install expo-linear-gradient
+npx expo install @expo-google-fonts/playfair-display
+npx expo install @expo-google-fonts/montserrat
+npx expo install @react-native-community/slider
+
+# Create project structure
+mkdir -p src/screens
+mkdir -p src/components
+mkdir -p src/navigation
+mkdir -p src/theme
+mkdir -p src/data
+
+# Create assets folder in root (not in src)
+mkdir -p assets/products
+
+# Copy your images directly to assets/products
+xcopy /E /I "C:\Users\Jinay\Desktop\marbelo\marbelo\products\*.jpg" "assets\products\"
